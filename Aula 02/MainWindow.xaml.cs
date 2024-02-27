@@ -52,6 +52,16 @@ namespace Aula_02
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            tb_Nome.Clear();
+        }
+
+        private void tb_Cpf_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void tb_complemento_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }

@@ -25,18 +25,18 @@
 
         <Label Content="Nome Completo:" HorizontalAlignment="Left" Margin="21,56,0,0" VerticalAlignment="Top" Height="26" Width="101"/>
         <Label Content="Data de Nascimento:" HorizontalAlignment="Left" Margin="21,110,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="21,82,0,0" TextWrapping="Wrap" Text="tb_nomeCompleto&#xA;" VerticalAlignment="Top" Width="659" Height="23" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="3"/>
-        <TextBox HorizontalAlignment="Left" Margin="39,135,0,0" TextWrapping="Wrap" Text="tb_cpf&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Column="2"/>
+        <TextBox x:Name="tb_Nome" HorizontalAlignment="Left" Margin="21,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="659" Height="23" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="tb_Cpf" HorizontalAlignment="Left" Margin="39,135,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Column="2" TextChanged="tb_Cpf_TextChanged"/>
         <Label Content="CPF:" HorizontalAlignment="Left" Margin="39,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.367,-0.023" Grid.Column="2" Height="26" Width="33"/>
         <Label Content="Dados" HorizontalAlignment="Left" Margin="21,27,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="31" Width="57"/>
         <Label Content="Endereço" HorizontalAlignment="Left" Margin="21,173,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="31" Width="79"/>
         <DatePicker HorizontalAlignment="Left" Margin="21,135,0,0" VerticalAlignment="Top" Width="197" Grid.ColumnSpan="3" Height="24" Text="dateGridViews"/>
         <Label Content="Rua:&#xA;" HorizontalAlignment="Left" Margin="21,204,0,0" VerticalAlignment="Top" Height="42" Width="33"/>
-        <TextBox HorizontalAlignment="Left" Margin="21,229,0,0" TextWrapping="Wrap" Text="tb_rua&#xA;" VerticalAlignment="Top" Width="285" Height="23" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="tb_rua" HorizontalAlignment="Left" Margin="21,229,0,0" TextWrapping="Wrap" Text="tb_rua&#xA;" VerticalAlignment="Top" Width="285" Height="23" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="3"/>
         <Label Content="Número:" HorizontalAlignment="Left" Margin="140,206,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="56"/>
-        <TextBox HorizontalAlignment="Left" Margin="140,231,0,0" TextWrapping="Wrap" Text="tb_numero&#xA;" VerticalAlignment="Top" Width="345" Height="23" TextChanged="TextBox_TextChanged_2" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="137,231,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="346" Height="23" TextChanged="TextBox_TextChanged_2" Grid.Column="2"/>
         <Label Content="CEP:" HorizontalAlignment="Left" Margin="21,257,0,0" VerticalAlignment="Top" Height="26" Width="33"/>
-        <TextBox HorizontalAlignment="Left" Margin="21,283,0,0" TextWrapping="Wrap" Text="tb_cep&#xA;" VerticalAlignment="Top" Width="200" Height="23" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="3">
+        <TextBox x:Name="tb_cep" HorizontalAlignment="Left" Margin="21,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="23" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="3">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -52,12 +52,12 @@
             <ComboBoxItem Content="Acre"/>
         </ComboBox>
         <Label Content="Complemento:" HorizontalAlignment="Left" Margin="240,259,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="88"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,282,0,0" TextWrapping="Wrap" Text="tb_complemento&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Column="2"/>
+        <TextBox x:Name="tb_complemento" HorizontalAlignment="Left" Margin="240,282,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Column="2" TextChanged="tb_complemento_TextChanged"/>
         <Label Content="Telefone:" HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.444,2.375" Grid.Row="1" Height="7" Width="78"/>
         <Label Content="Telefone:" HorizontalAlignment="Left" Margin="21,15,0,0" VerticalAlignment="Top" Grid.Row="2" Height="26" Width="57"/>
-        <TextBox HorizontalAlignment="Left" Margin="21,41,0,0" TextWrapping="Wrap" Text="tb_telefone&#xA;" VerticalAlignment="Top" Width="197" Height="23" Grid.Row="2" Grid.ColumnSpan="3"/>
-        <TextBox HorizontalAlignment="Left" Margin="39,41,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="185" Height="23" Grid.Row="2" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Margin="240,41,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Row="2" Grid.Column="2"/>
+        <TextBox x:Name="tb_telefone" HorizontalAlignment="Left" Margin="21,41,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="197" Height="23" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="tb_celular" HorizontalAlignment="Left" Margin="39,41,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="185" Height="23" Grid.Row="2" Grid.Column="2"/>
+        <TextBox x:Name="tb_email" HorizontalAlignment="Left" Margin="240,41,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Row="2" Grid.Column="2"/>
         <Label Content="Celular:" HorizontalAlignment="Left" Margin="38,15,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.Column="2" Height="26" Width="49"/>
         <Label Content="E-mail:" HorizontalAlignment="Left" Margin="240,15,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.Column="2" Height="26" Width="46"/>
         <Button Content="Salvar" HorizontalAlignment="Left" Margin="39,78,0,0" VerticalAlignment="Top" Width="48" Background="#FFE69393" Grid.Row="2" Grid.Column="2" Height="20"/>
