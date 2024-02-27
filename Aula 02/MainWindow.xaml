@@ -1,0 +1,72 @@
+﻿<Window x:Class="Aula_02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aula_02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Width="NaN" Height="NaN" Margin="0,0,0,-16" UseLayoutRounding="True" Cursor="" Background="#FFFDD8D8" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="121*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="326*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="117*"/>
+        </Grid.RowDefinitions>
+        <Canvas Background="#FFE69393" RenderTransformOrigin="0.519,0.578" Height="NaN" Margin="0,315,0,105" Grid.RowSpan="3" Width="NaN" Grid.ColumnSpan="3">
+            <Label Content="Telefone" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" Canvas.Left="19" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas Background="#FFE69393" Height="NaN" Margin="0,27,0,270" RenderTransformOrigin="0.519,0.578" Grid.ColumnSpan="3" />
+        <Canvas Background="#FFE69393" Height="NaN" Margin="0,174,0,123" RenderTransformOrigin="0.519,0.578" Grid.ColumnSpan="3" />
+
+        <Label Content="Nome Completo:" HorizontalAlignment="Left" Margin="21,56,0,0" VerticalAlignment="Top" Height="26" Width="101"/>
+        <Label Content="Data de Nascimento:" HorizontalAlignment="Left" Margin="21,110,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="21,82,0,0" TextWrapping="Wrap" Text="tb_nomeCompleto&#xA;" VerticalAlignment="Top" Width="659" Height="23" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="3"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,135,0,0" TextWrapping="Wrap" Text="tb_cpf&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Column="2"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="39,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.367,-0.023" Grid.Column="2" Height="26" Width="33"/>
+        <Label Content="Dados" HorizontalAlignment="Left" Margin="21,27,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="31" Width="57"/>
+        <Label Content="Endereço" HorizontalAlignment="Left" Margin="21,173,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="31" Width="79"/>
+        <DatePicker HorizontalAlignment="Left" Margin="21,135,0,0" VerticalAlignment="Top" Width="197" Grid.ColumnSpan="3" Height="24" Text="dateGridViews"/>
+        <Label Content="Rua:&#xA;" HorizontalAlignment="Left" Margin="21,204,0,0" VerticalAlignment="Top" Height="42" Width="33"/>
+        <TextBox HorizontalAlignment="Left" Margin="21,229,0,0" TextWrapping="Wrap" Text="tb_rua&#xA;" VerticalAlignment="Top" Width="285" Height="23" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="3"/>
+        <Label Content="Número:" HorizontalAlignment="Left" Margin="140,206,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="56"/>
+        <TextBox HorizontalAlignment="Left" Margin="140,231,0,0" TextWrapping="Wrap" Text="tb_numero&#xA;" VerticalAlignment="Top" Width="345" Height="23" TextChanged="TextBox_TextChanged_2" Grid.Column="2"/>
+        <Label Content="CEP:" HorizontalAlignment="Left" Margin="21,257,0,0" VerticalAlignment="Top" Height="26" Width="33"/>
+        <TextBox HorizontalAlignment="Left" Margin="21,283,0,0" TextWrapping="Wrap" Text="tb_cep&#xA;" VerticalAlignment="Top" Width="200" Height="23" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="3">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.047"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Cidade:" HorizontalAlignment="Left" Margin="46,257,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="49"/>
+        <ComboBox HorizontalAlignment="Left" Margin="46,282,0,0" VerticalAlignment="Top" Width="178" Grid.Column="2" Height="22">
+            <ComboBoxItem Content="Amazonas"/>
+            <ComboBoxItem Content="Acre"/>
+        </ComboBox>
+        <Label Content="Complemento:" HorizontalAlignment="Left" Margin="240,259,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="88"/>
+        <TextBox HorizontalAlignment="Left" Margin="240,282,0,0" TextWrapping="Wrap" Text="tb_complemento&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Column="2"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.444,2.375" Grid.Row="1" Height="7" Width="78"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="21,15,0,0" VerticalAlignment="Top" Grid.Row="2" Height="26" Width="57"/>
+        <TextBox HorizontalAlignment="Left" Margin="21,41,0,0" TextWrapping="Wrap" Text="tb_telefone&#xA;" VerticalAlignment="Top" Width="197" Height="23" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,41,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="185" Height="23" Grid.Row="2" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="240,41,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="245" Height="23" Grid.Row="2" Grid.Column="2"/>
+        <Label Content="Celular:" HorizontalAlignment="Left" Margin="38,15,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.Column="2" Height="26" Width="49"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="240,15,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.Column="2" Height="26" Width="46"/>
+        <Button Content="Salvar" HorizontalAlignment="Left" Margin="39,78,0,0" VerticalAlignment="Top" Width="48" Background="#FFE69393" Grid.Row="2" Grid.Column="2" Height="20"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="175,78,0,0" VerticalAlignment="Top" Background="#FFE69393" Grid.Row="2" Grid.Column="2" Height="20" Width="49" Click="Button_Click"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="547,88,0,0" VerticalAlignment="Top" Width="48" Grid.Row="2" Background="#FFE69393" Grid.Column="2" Height="20"/>
+        <Label Content="Sexo:" HorizontalAlignment="Left" Margin="291,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.367,-0.023" Grid.Column="2" Height="26" Width="38"/>
+        <RadioButton Content="Feminino" HorizontalAlignment="Left" Margin="291,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.732,-0.582" Checked="RadioButton_Checked" Grid.Column="2" Height="15" Width="68"/>
+        <RadioButton Content="Masculino" HorizontalAlignment="Left" Margin="291,148,0,0" VerticalAlignment="Top" Grid.Column="2" Height="15" Width="73"/>
+        <RadioButton Content="Prefiro não dizer" HorizontalAlignment="Left" Margin="379,132,0,0" VerticalAlignment="Top" Width="115" Grid.Column="2" Height="15"/>
+
+    </Grid>
+</Window>
